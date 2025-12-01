@@ -108,7 +108,7 @@
 
 The modeling of asset returns is a central task in empirical finance and risk management. Standard linear factor models are analytically convenient, but they often fail to capture nonlinear relationships and regime changes that arise in practice. Kernel methods provide a flexible alternative by implicitly mapping the data into a high-dimensional feature space in which nonlinear relationships can be represented linearly.
 
-The objective of this study is to compare the performance of a linear regression model and a kernel ridge regression model in a controlled simulation framework. Three data-generating processes (DGPs) with increasing nonlinear complexity are considered. This design makes it possible to quantify how model performance degrades for the linear specification and to what extent the kernel method can recover the underlying nonlinear structure.\footnote{All results are fully reproducible using the Python code available at \url{https://github.com/username/repo}.}
+The objective of this study is to compare the performance of a linear regression model and a kernel ridge regression model in a controlled simulation framework. Three data-generating processes (DGPs) with increasing nonlinear complexity are considered. This design makes it possible to quantify how model performance degrades for the linear specification and to what extent the kernel method can recover the underlying nonlinear structure.\footnote{All results are fully reproducible using the Python code available at \url{https://github.com/ansabu01/Linear_vs_Kernel_Models_in_Simulated_Returns}.}
 
 \section{Data Simulation}
 
@@ -258,13 +258,13 @@ Figure~\ref{fig:returns} displays the simulated return paths for the three cases
 
     \begin{subfigure}[b]{0.9\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/returns_quadratic.pdf}
+        \includegraphics[width=\textwidth]{../src/images/returns_quadratic.pdf}
         \caption{Quadratic}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.9\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/returns_interaction.pdf}
+        \includegraphics[width=\textwidth]{../src/images/returns_interaction.pdf}
         \caption{Interaction}
     \end{subfigure}
 
@@ -272,7 +272,7 @@ Figure~\ref{fig:returns} displays the simulated return paths for the three cases
 
     \begin{subfigure}[b]{0.9\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/returns_switching.pdf}
+        \includegraphics[width=\textwidth]{../src/images/returns_switching.pdf}
         \caption{Switching}
     \end{subfigure}
 
@@ -289,19 +289,19 @@ Figure~\ref{fig:linear} shows the relationship between true and predicted return
 
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/linear_quadratic.pdf}
+        \includegraphics[width=\textwidth]{../src/images/linear_quadratic.pdf}
         \caption{Quadratic}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/linear_interaction.pdf}
+        \includegraphics[width=\textwidth]{../src/images/linear_interaction.pdf}
         \caption{Interaction}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/linear_switching.pdf}
+        \includegraphics[width=\textwidth]{../src/images/linear_switching.pdf}
         \caption{Switching}
     \end{subfigure}
 
@@ -317,7 +317,7 @@ Before analyzing the kernel regression results, it is useful to inspect the stru
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.45\textwidth]{src/images/gram_matrix.pdf}
+    \includegraphics[width=0.45\textwidth]{../src/images/gram_matrix.pdf}
     \caption{RBF Gram matrix $K$ computed from the input features $(F_t, V_t)$. Brighter values correspond to higher similarity between observations.}
     \label{fig:gram_matrix}
 \end{figure}
@@ -333,19 +333,19 @@ Figure~\ref{fig:kernel} reports the real vs.\ predicted returns obtained from ke
 
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/kernel_quadratic.pdf}
+        \includegraphics[width=\textwidth]{../src/images/kernel_quadratic.pdf}
         \caption{Quadratic}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/kernel_interaction.pdf}
+        \includegraphics[width=\textwidth]{../src/images/kernel_interaction.pdf}
         \caption{Interaction}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/kernel_switching.pdf}
+        \includegraphics[width=\textwidth]{../src/images/kernel_switching.pdf}
         \caption{Switching}
     \end{subfigure}
 
@@ -455,13 +455,13 @@ Figure~\ref{fig:kernel_noise_comparison} compares the fitted values for kernel r
 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/kernel_switching.pdf}
+        \includegraphics[width=\textwidth]{../src/images/kernel_switching.pdf}
         \caption{Switching}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{src/images/kernel_noise.pdf}
+        \includegraphics[width=\textwidth]{../src/images/kernel_noise.pdf}
         \caption{High-noise}
     \end{subfigure}
 

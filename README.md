@@ -1,5 +1,8 @@
 # Kernel vs. Linear Methods in Simulated Asset Returns
 
+**Main code:** [`src/main.py`](src/main.py)
+**Full report (PDF):** [`paper/main.pdf`](paper/main.pdf)  
+
 This repository presents a fully reproducible simulation study comparing linear regression and kernel ridge regression with an RBF kernel across several nonlinear asset-return data-generating processes. All figures, tables, and outputs in the accompanying LaTeX report are produced directly by the Python code in `src/main.py`.
 
 ## 1. Project Overview
@@ -39,27 +42,40 @@ Linear_vs_Kernel_Models_in_Simulated_Returns/
 ## 3. How to Reproduce Results
 
 From the project root, run:
-
-    python src/main.py
+```bash
+python src/main.py              # Windows / standard usage
+python3 src/main.py             # Linux / macOS
+```
 
 All generated figures will be saved in:
-
-    src/images/
+```text
+src/images/
+```
 
 These figures are then automatically included in `paper/main.tex`.
 
 ## 4. Requirements
 
-The project depends on the following Python packages:
+The project requires the following Python packages:
 
-- numpy  
-- pandas  
-- matplotlib  
+- numpy
+- pandas
+- matplotlib
 - scikit-learn
 
-Install all dependencies with:
+Install with pip:
+```bash
+pip install -r requirements.txt
+```
 
-    pip install -r requirements.txt
+Install in a conda environment:
+```bash
+conda create -n kernel-linear python=3.12 -y
+conda activate kernel-linear
+pip install -r requirements.txt
+```
+
+Note: Installing via pip inside the conda environment ensures consistent versions.
 
 ## 5. License
 
