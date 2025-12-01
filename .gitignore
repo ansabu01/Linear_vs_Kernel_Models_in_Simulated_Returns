@@ -1,0 +1,34 @@
+#   PYTHON
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.ipynb_checkpoints/
+.env
+.venv
+venv/
+env/
+
+#   LATEX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.lof
+*.lot
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+*.pdfsync
+
+#   MAC / OS / EDITORS
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
