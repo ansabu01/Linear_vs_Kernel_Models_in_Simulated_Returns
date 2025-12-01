@@ -19,7 +19,7 @@ The objectives are to assess:
 
 ## 2. Repository Structure
 
-Linear_vs_Kernel_Models_in_Simulated_Returns/
+'''Linear_vs_Kernel_Models_in_Simulated_Returns/
 │
 ├── src/                        # Python source code
 │   ├── images/                 # Generated figures (PDF) used in the paper
@@ -33,6 +33,7 @@ Linear_vs_Kernel_Models_in_Simulated_Returns/
 ├── LICENSE                     # MIT License for open-source distribution
 ├── README.md                   # Project overview and usage instructions
 └── .gitignore                  # Ignore virtualenvs, caches, LaTeX builds, etc.
+'''
 
 ## 3. How to Reproduce Results
 
