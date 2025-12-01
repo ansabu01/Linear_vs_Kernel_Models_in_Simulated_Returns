@@ -63,37 +63,7 @@ These figures are then automatically included in `paper/main.tex`.
 Ensure that the following software is installed:
 
 - Python 3.8 or higher (3.12 recommended)
-- Jupyter Notebook (recommended) or JupyterLab
-
-#### Python
-
-Download Python from: https://www.python.org/downloads/.
-
-Verify the Python installation:
-```bash
-python --version                    # Windows/macOS/Linux
-python3 --version                   # Alternative command on macOS/Linux
-```
-
-#### Jupyter
-
-Install Jupyter Notebook and JupyterLab with pip (recommended):
-```bash
-pip install notebook jupyterlab
-```
-
-Install Jupyter Notebook and JupyterLab in a conda environment (requires Anaconda or Miniconda):
-```bash
-conda install -c conda-forge notebook jupyterlab
-```
-
-Verify the Jupyter installation (works for both pip and conda):
-```bash
-jupyter notebook --version
-jupyter lab --version
-```
-
-#### Packages
+- Jupyter Notebook or JupyterLab
 
 The project requires the following Python packages:
 
