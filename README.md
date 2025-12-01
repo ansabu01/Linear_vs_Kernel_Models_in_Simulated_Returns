@@ -1,6 +1,6 @@
 # Kernel vs. Linear Methods in Simulated Asset Returns
 
-**Main code:** [`src/main.py`](src/main.py)
+**Main code:** [`src/main.py`](src/main.py)  
 **Full report (PDF):** [`paper/main.pdf`](paper/main.pdf)  
 
 This repository presents a fully reproducible simulation study comparing linear regression and kernel ridge regression with an RBF kernel across several nonlinear asset-return data-generating processes. All figures, tables, and outputs in the accompanying LaTeX report are produced directly by the Python code in `src/main.py`.
